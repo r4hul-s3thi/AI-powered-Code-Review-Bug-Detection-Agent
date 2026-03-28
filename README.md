@@ -217,6 +217,8 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
+> After activation you should see `(venv)` at the start of your terminal line.
+
 ### Step 3 — Install dependencies
 
 ```bash
@@ -243,34 +245,131 @@ LLM_MODEL=gpt-4o-mini
 ```
 
 > **Get your keys:**
-> - GitHub Token → [github.com/settings/tokens](https://github.com/settings/tokens) → Classic → `repo` scope
-> - OpenAI Key → [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+> - GitHub Token → [github.com/settings/tokens](https://github.com/settings/tokens) → Classic → tick `repo` scope
+> - OpenAI Key → [platform.openai.com/api-keys](https://platform.openai.com/api-keys) → must have billing credits
+> - Webhook Secret → make up any random string e.g. `mysecretkey123`
 
 ### Step 5 — Run the server
 
+> **Note for Windows users:** If port 8000 is blocked with `WinError 10013`, use port 8080 instead.
+
 ```bash
-uvicorn src.main:app --reload --port 8000
+# Try port 8000 first
+python -m uvicorn src.main:app --reload --port 8000
+
+# If blocked, use port 8080
+python -m uvicorn src.main:app --reload --port 8080
 ```
 
-Visit **http://localhost:8000/health** ✅
+You should see:
+```
+INFO:     Uvicorn running on http://127.0.0.1:8000
+INFO:     Application startup complete.
+```
 
-### Step 6 — Expose via ngrok
+Verify it's running:
+```
+http://localhost:8000/health
+```
+Should return: `{"status":"ok","tree_sitter_available":true}` ✅
 
+### Step 6 — Install and configure ngrok
+
+1. Download ngrok → [ngrok.com/download](https://ngrok.com/download)
+2. Sign up free → [dashboard.ngrok.com](https://dashboard.ngrok.com)
+3. Connect your account (one time only):
+```bash
+ngrok config add-authtoken YOUR_NGROK_AUTHTOKEN
+```
+4. Open a **new terminal** and run (use same port as your server):
 ```bash
 ngrok http 8000
-# Copy the https URL → e.g. https://abc123.ngrok-free.app
+# or if using 8080:
+ngrok http 8080
 ```
+5. Copy the HTTPS URL shown:
+```
+Forwarding   https://abc123.ngrok-free.app -> http://localhost:8000
+```
+
+> **Important:** ngrok must point to the **same port** as your uvicorn server.
 
 ### Step 7 — Register GitHub Webhook
 
+1. Go to your repo → **Settings** → **Webhooks** → **Add webhook**
+2. Fill in:
+
 | Field | Value |
 |:---|:---|
-| Payload URL | `https://abc123.ngrok-free.app/webhook` |
+| Payload URL | `https://abc123.ngrok-free.app/webhook` ← your ngrok URL + `/webhook` |
 | Content type | `application/json` |
-| Secret | value of `GITHUB_WEBHOOK_SECRET` |
-| Events | Pull requests only |
+| Secret | Same value as `GITHUB_WEBHOOK_SECRET` in your `.env` |
+| Events | Select **Let me select individual events** → tick **Pull requests** only |
 
-### Step 8 — Open a PR and watch it work!
+3. Click **Add webhook** → you'll see a ✅ green tick
+
+> **Common mistake:** Make sure the Payload URL ends with `/webhook` — not just the ngrok URL alone.
+
+### Step 8 — Create a test PR
+
+1. In your repo click **Add file** → **Create new file**
+2. Name it `src/test_bad_code.py`
+3. Paste some intentionally bad Python code:
+
+```python
+import pickle
+import subprocess
+
+SECRET_KEY = "hardcoded_secret_abc123"
+
+def login(username, password):
+    query = "SELECT * FROM users WHERE name=" + username
+    db.execute(query)
+
+def get_users():
+    users = []
+    for i in range(1000):
+        user = db.execute("SELECT * FROM users WHERE id=" + str(i))
+        users.append(user)
+    return users
+
+def run_command(cmd):
+    subprocess.run(cmd, shell=True)
+
+def load_data(data):
+    return pickle.loads(data)
+```
+
+4. Scroll down → select **Create a new branch** → name it `test-review`
+5. Click **Propose new file** → **Create pull request**
+
+### Step 9 — Watch the agent work!
+
+Within seconds your uvicorn terminal will show:
+
+```
+INFO:  ▶ PR #1 on your-username/your-repo  (action=opened)
+INFO:  Fetched diff and 1 Python files for PR #1
+INFO:  Extracted 4 semantic chunks from PR #1
+INFO:  Orchestrator dispatching 4 chunks to 3 agents
+INFO:  SecurityAgent: 4 findings
+INFO:  PerformanceAgent: 2 findings
+INFO:  StyleAgent: 3 findings
+INFO:  Synthesizer: 6 unique findings after dedup
+INFO:  Posted 6 inline comments to PR #1
+```
+
+And your PR will have inline comments like:
+```
+🔴 [High] SQL injection via string concatenation
+🔴 [High] Hardcoded secret key detected
+🔴 [High] Insecure use of pickle.loads
+🟡 [Medium] N+1 query pattern inside for-loop
+🟡 [Medium] Command injection via shell=True
+```
+
+> **Keep both terminals open** (uvicorn + ngrok) while testing.
+> If ngrok restarts, update the Payload URL in GitHub webhook settings.
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00d9ff,100:7b2fbe&height=3&section=header" width="100%"/>
 
@@ -374,6 +473,71 @@ tests/test_webhook.py::test_webhook_processes_opened_pr        PASSED
 ## 🔧 Troubleshooting
 
 <details>
+<summary><b>WinError 10013 — Port access denied</b></summary>
+
+Port 8000 is blocked by Windows. Use a different port:
+```bash
+python -m uvicorn src.main:app --reload --port 8080
+```
+Then update ngrok: `ngrok http 8080` and update the webhook Payload URL accordingly.
+</details>
+
+<details>
+<summary><b>uvicorn not recognized</b></summary>
+
+The virtual environment is not activated. Run:
+```bash
+venv\Scripts\activate
+```
+Then use `python -m uvicorn` instead of just `uvicorn`:
+```bash
+python -m uvicorn src.main:app --reload --port 8080
+```
+</details>
+
+<details>
+<summary><b>Webhook 404 error</b></summary>
+
+The Payload URL is missing `/webhook` at the end. It must be:
+```
+https://your-ngrok-url.ngrok-free.app/webhook
+```
+Not just `https://your-ngrok-url.ngrok-free.app/`
+</details>
+
+<details>
+<summary><b>Webhook 502 error — Redirect response 302</b></summary>
+
+This is fixed in the latest version. Make sure your `src/github_client.py` has `follow_redirects=True`:
+```python
+with httpx.Client(timeout=30, follow_redirects=True) as client:
+```
+</details>
+
+<details>
+<summary><b>OpenAI 429 — insufficient_quota</b></summary>
+
+Your OpenAI account has no credits. Add billing at:
+[platform.openai.com/settings/billing](https://platform.openai.com/settings/billing)
+
+Minimum $5 credit is enough to run hundreds of PR reviews.
+</details>
+
+<details>
+<summary><b>Webhook fires but server shows nothing</b></summary>
+
+ngrok is pointing to the wrong port. Check your ngrok terminal:
+```
+Forwarding https://xxx.ngrok-free.app -> http://localhost:8080
+```
+Make sure the port matches your uvicorn port. If not, restart ngrok:
+```bash
+ngrok http 8080
+```
+Then update the Payload URL in GitHub webhook settings.
+</details>
+
+<details>
 <summary><b>tree-sitter import error</b></summary>
 
 ```bash
@@ -382,24 +546,9 @@ pip install tree-sitter==0.25.2 tree-sitter-python==0.23.6
 </details>
 
 <details>
-<summary><b>OpenAI AuthenticationError</b></summary>
-
-Check that `OPENAI_API_KEY` is set correctly in your `.env` file in the project root.
-</details>
-
-<details>
 <summary><b>Webhook shows Invalid signature</b></summary>
 
 `GITHUB_WEBHOOK_SECRET` in `.env` must exactly match the secret entered in GitHub webhook settings.
-</details>
-
-<details>
-<summary><b>ngrok tunnel not working</b></summary>
-
-```bash
-uvicorn src.main:app --port 8000   # terminal 1
-ngrok http 8000                    # terminal 2
-```
 </details>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7b2fbe,50:00d9ff,100:0d1117&height=160&section=footer&animation=fadeIn" width="100%"/>
