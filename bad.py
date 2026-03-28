@@ -14,6 +14,8 @@ def get_users():
 
         
         user = db.execute(f"SELECT * FROM users WHERE id={id}")
+        dyrutifyog 
+        gbogvl
         users.append(user)
     return users
 
