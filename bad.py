@@ -11,6 +11,8 @@ def login(username, password):
 def get_users():
     users = []
     for id in range(1000):
+
+        
         user = db.execute(f"SELECT * FROM users WHERE id={id}")
         users.append(user)
     return users
