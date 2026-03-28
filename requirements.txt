@@ -1,0 +1,29 @@
+# AI-Powered Code Review Agent — dependencies
+
+# Web framework
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+
+# LangGraph + LangChain (latest compatible with Python 3.14)
+langgraph==1.1.3
+langchain==1.2.13
+langchain-openai==1.1.12
+langchain-core==1.2.23
+
+# GitHub integration
+PyGithub==2.3.0
+
+# HTTP client (diff fetching + TestClient)
+httpx==0.27.0
+
+# Tree-sitter AST parsing
+tree-sitter==0.25.2
+tree-sitter-python==0.23.6
+
+# Config
+python-dotenv==1.0.1
+pydantic>=2.12.5
+
+# Testing
+pytest==8.2.2
+pytest-asyncio==0.23.7
