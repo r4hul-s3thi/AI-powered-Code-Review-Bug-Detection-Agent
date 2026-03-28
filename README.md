@@ -1,172 +1,135 @@
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,30:0d1117,60:00d9ff,100:7b2fbe&height=260&section=header&text=AI%20Code%20Review%20Agent&fontSize=58&fontColor=ffffff&fontAlignY=40&desc=LangGraph%20%E2%80%A2%20Tree-sitter%20AST%20%E2%80%A2%20FastAPI%20%E2%80%A2%20GPT-4o-mini&descSize=20&descAlignY=62&descFontColor=00d9ff&animation=fadeIn" />
+
 <div align="center">
 
-<!-- Animated wave header banner — capsule-render is always live -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=AI%20Code%20Review%20Agent&fontSize=52&fontColor=fff&fontAlignY=38&desc=LangGraph%20%7C%20Tree-sitter%20AST%20%7C%20FastAPI%20%7C%20GPT-4o-mini&descAlignY=60&descSize=18&animation=twinkling" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=26&duration=2500&pause=600&color=00D9FF&center=true&vCenter=true&repeat=true&width=800&height=60&lines=🤖+AI-Powered+Code+Review+%26+Bug+Detection;🔐+OWASP+Top-10+Security+Analysis;⚡+N%2B1+Query+%26+Performance+Detection;🎨+PEP+8+%26+Style+Enforcement;🌳+95%25+Token+Reduction+via+Tree-sitter+AST;🚀+Production-Ready+%7C+35+Tests+Passing" alt="Typing SVG" />
 
 <br/>
 
-<!-- Animated typing headline -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3000&pause=800&color=00D9FF&center=true&vCenter=true&multiline=false&repeat=true&width=720&height=50&lines=🤖+Automated+Code+Review+via+GitHub+Webhooks;🌳+Tree-sitter+AST+%7C+~95%25+Token+Reduction;⚡+LangGraph+Parallel+Multi-Agent+Pipeline;🔐+Security+%7C+Performance+%7C+Style+Analysis;🚀+Production-Ready+%7C+Docker+%7C+35+Tests+Passing" alt="Typing SVG" />
-
-<br/><br/>
-
-<!-- Badges row 1 -->
-<a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=0D1117" /></a>
-<a href="https://fastapi.tiangolo.com"><img src="https://img.shields.io/badge/FastAPI-0.111-009688?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=0D1117" /></a>
-<a href="https://langchain-ai.github.io/langgraph/"><img src="https://img.shields.io/badge/LangGraph-1.1.3-FF6B6B?style=for-the-badge&logo=chainlink&logoColor=white&labelColor=0D1117" /></a>
-<a href="https://openai.com"><img src="https://img.shields.io/badge/OpenAI-GPT--4o--mini-412991?style=for-the-badge&logo=openai&logoColor=white&labelColor=0D1117" /></a>
-
-<br/><br/>
-
-<!-- Badges row 2 -->
-<a href="https://docker.com"><img src="https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=0D1117" /></a>
-<img src="https://img.shields.io/badge/Tests-35%20Passing-00C853?style=for-the-badge&logo=pytest&logoColor=white&labelColor=0D1117" />
-<img src="https://img.shields.io/badge/Coverage-95%25-00C853?style=for-the-badge&logo=codecov&logoColor=white&labelColor=0D1117" />
-<img src="https://img.shields.io/badge/License-MIT-F7DF1E?style=for-the-badge&logo=opensourceinitiative&logoColor=white&labelColor=0D1117" />
-
-<br/><br/>
-
-<!-- Animated subtitle description -->
-<img src="https://readme-typing-svg.demolab.com?font=Roboto&size=15&duration=4000&pause=2000&color=888888&center=true&vCenter=true&width=760&height=40&lines=A+production-ready+AI+agent+that+intercepts+GitHub+Pull+Requests+and+posts+inline+review+comments." alt="subtitle" />
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=0d1117)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=0d1117)](https://fastapi.tiangolo.com)
+[![LangGraph](https://img.shields.io/badge/LangGraph-1.1.3-FF6B6B?style=for-the-badge&logo=chainlink&logoColor=white&labelColor=0d1117)](https://langchain-ai.github.io/langgraph/)
+[![OpenAI](https://img.shields.io/badge/GPT--4o--mini-412991?style=for-the-badge&logo=openai&logoColor=white&labelColor=0d1117)](https://openai.com)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=0d1117)](https://docker.com)
+[![Tests](https://img.shields.io/badge/Tests-35%20Passing-00C853?style=for-the-badge&logo=pytest&logoColor=white&labelColor=0d1117)](https://pytest.org)
+[![License](https://img.shields.io/badge/License-MIT-F7DF1E?style=for-the-badge&logo=opensourceinitiative&logoColor=black&labelColor=0d1117)](LICENSE)
 
 <br/>
 
-[🚀 Quick Start](#-quick-start) • [🏗️ Architecture](#️-architecture) • [⚙️ Installation](#️-installation) • [🐳 Docker](#-docker) • [🧪 Tests](#-running-tests) • [📡 API](#-api-endpoints)
+<img src="https://readme-typing-svg.demolab.com?font=Roboto&weight=400&size=16&duration=5000&pause=3000&color=888888&center=true&vCenter=true&width=780&height=30&lines=A+production-ready+AI+agent+that+intercepts+GitHub+PRs+and+posts+intelligent+inline+review+comments." alt="desc" />
+
+<br/>
+
+**[🚀 Quick Start](#-quick-start)** &nbsp;•&nbsp; **[🏗️ Architecture](#️-architecture)** &nbsp;•&nbsp; **[⚙️ Installation](#️-installation)** &nbsp;•&nbsp; **[🐳 Docker](#-docker)** &nbsp;•&nbsp; **[🧪 Tests](#-running-tests)** &nbsp;•&nbsp; **[📡 API](#-api-endpoints)**
 
 </div>
 
-<br/>
-
-<!-- Section divider using capsule-render soft line -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&section=header" />
-
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00d9ff,100:7b2fbe&height=3&section=header" width="100%"/>
 
 ## ✨ Features
 
+<div align="center">
+
 <table>
 <tr>
-<td width="50%">
+<td align="center" width="25%">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=2000&pause=5000&color=FF4444&center=true&vCenter=true&width=200&height=25&lines=🔐+Security+Analysis" alt="" />
 
-### 🔐 Security Analysis
-- SQL / NoSQL injection detection
-- Hardcoded secrets & API keys
-- Command injection (`shell=True`)
-- Insecure deserialization (`pickle`)
-- Path traversal vulnerabilities
-- Full **OWASP Top-10** coverage
-
+SQL/NoSQL Injection · Hardcoded Secrets · Command Injection · Insecure Deserialization · Path Traversal · **OWASP Top-10**
 </td>
-<td width="50%">
+<td align="center" width="25%">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=2000&pause=5000&color=FF9900&center=true&vCenter=true&width=200&height=25&lines=⚡+Performance+Analysis" alt="" />
 
-### ⚡ Performance Analysis
-- N+1 query pattern detection
-- O(n²) loop identification
-- Blocking I/O in async functions
-- Missing bulk operations
-- Repeated expensive calls
-- Caching opportunity hints
-
+N+1 Queries · O(n²) Loops · Blocking I/O · Missing Bulk Ops · Repeated Calls · **Caching Hints**
 </td>
-</tr>
-<tr>
-<td width="50%">
+<td align="center" width="25%">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=2000&pause=5000&color=00D9FF&center=true&vCenter=true&width=200&height=25&lines=🎨+Style+Analysis" alt="" />
 
-### 🎨 Style Analysis
-- PEP 8 violation detection
-- Missing docstrings & type hints
-- Magic numbers & unclear names
-- Functions > 20 lines undocumented
-- Import organization issues
-
+PEP 8 · Missing Docstrings · Type Hints · Magic Numbers · Unclear Names · **Import Order**
 </td>
-<td width="50%">
+<td align="center" width="25%">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=2000&pause=5000&color=7B2FBE&center=true&vCenter=true&width=200&height=25&lines=🧠+Smart+Pipeline" alt="" />
 
-### 🧠 Smart Architecture
-- **~95% token reduction** via AST chunking
-- Parallel agent execution (LangGraph)
-- Deduplication + severity sorting
-- Rate-limited LLM calls (Semaphore)
-- Batched GitHub inline PR comments
-
+**~95% Token Reduction** · Parallel Agents · Dedup + Sort · Rate Limiting · Batched Comments
 </td>
 </tr>
 </table>
 
-<br/>
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&section=header" />
-<br/>
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:7b2fbe,100:00d9ff&height=3&section=header" width="100%"/>
 
 ## 🏗️ Architecture
 
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=3000&pause=2000&color=00D9FF&center=true&vCenter=true&width=600&height=30&lines=GitHub+PR+→+FastAPI+→+AST+Chunker+→+LangGraph+→+PR+Comments" alt="flow" />
+</div>
+
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                        GitHub PR Event                          │
-└──────────────────────────────┬──────────────────────────────────┘
-                               │  POST /webhook
-                               ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                    FastAPI  (main.py)                           │
-│  ① HMAC-SHA256 signature verification                           │
-│  ② Filter: opened / synchronize / reopened only                 │
-└──────────────────────────────┬──────────────────────────────────┘
-                               │
-                    ┌──────────▼──────────┐
-                    │   github_client.py  │
-                    │  • Fetch raw diff   │
-                    │  • Fetch .py files  │
-                    └──────────┬──────────┘
-                               │
-                    ┌──────────▼──────────┐
-                    │     parser.py       │  ◄── ~95% Token Reduction
-                    │  Tree-sitter AST    │  500 lines → 30 lines
-                    │  Semantic Chunking  │  (only changed functions)
-                    └──────────┬──────────┘
-                               │
-          ┌────────────────────▼────────────────────┐
-          │           LangGraph Pipeline             │
-          │                                          │
-          │         ┌─── Orchestrator ───┐           │
-          │         │                   │           │
-          │    ┌────▼────┐  ┌───────────▼──┐  ┌────▼─────┐
-          │    │Security │  │ Performance  │  │  Style   │
-          │    │ Agent   │  │   Agent      │  │  Agent   │
-          │    │OWASP Top│  │ N+1, O(n²)  │  │ PEP 8   │
-          │    └────┬────┘  └──────┬───────┘  └────┬─────┘
-          │         └──────────────┼────────────────┘
-          │                        │
-          │              ┌─────────▼─────────┐
-          │              │    Synthesizer     │
-          │              │  Dedup + Sort      │
-          │              │  High→Medium→Low   │
-          │              └─────────┬─────────┘
-          └────────────────────────┼─────────────────┘
-                                   │
-                    ┌──────────────▼──────────────┐
-                    │      github_client.py        │
-                    │  Post inline PR comments     │
-                    │  (single batched review)     │
-                    └─────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────┐
+│                       GitHub PR Event                            │
+└─────────────────────────────┬────────────────────────────────────┘
+                              │  POST /webhook
+                              ▼
+┌──────────────────────────────────────────────────────────────────┐
+│                   FastAPI  (src/main.py)                         │
+│   ① HMAC-SHA256 signature verification                           │
+│   ② Filter: opened / synchronize / reopened only                 │
+└─────────────────────────────┬────────────────────────────────────┘
+                              │
+                   ┌──────────▼──────────┐
+                   │  github_client.py   │
+                   │  • Fetch raw diff   │
+                   │  • Fetch .py files  │
+                   └──────────┬──────────┘
+                              │
+                   ┌──────────▼──────────┐
+                   │     parser.py       │  ◄── ~95% Token Reduction
+                   │  Tree-sitter AST    │  500 lines → ~30 lines
+                   │  Semantic Chunking  │  (only changed functions)
+                   └──────────┬──────────┘
+                              │
+         ┌────────────────────▼─────────────────────┐
+         │            LangGraph Pipeline             │
+         │                                           │
+         │          ┌─── Orchestrator ───┐           │
+         │          │                   │           │
+         │    ┌─────▼─────┐  ┌──────────▼──┐  ┌────▼──────┐
+         │    │ Security  │  │ Performance │  │  Style    │
+         │    │  Agent    │  │   Agent     │  │  Agent    │
+         │    │ OWASP Top │  │ N+1, O(n²) │  │  PEP 8   │
+         │    └─────┬─────┘  └──────┬──────┘  └────┬──────┘
+         │          └───────────────┼───────────────┘
+         │                          │
+         │               ┌──────────▼──────────┐
+         │               │    Synthesizer       │
+         │               │  Dedup + Sort        │
+         │               │  High→Medium→Low     │
+         │               └──────────┬──────────┘
+         └──────────────────────────┼──────────────┘
+                                    │
+                   ┌────────────────▼────────────────┐
+                   │       github_client.py           │
+                   │   Post inline PR comments        │
+                   │   (single batched review)        │
+                   └─────────────────────────────────┘
 ```
 
 ### 💡 Why ~95% Token Reduction?
 
-| Approach | File Size | Tokens Sent | Cost |
-|:---|:---:|:---:|:---:|
-| Raw diff approach | 500 lines | ~5,000 tokens | 💸 Expensive |
-| **AST Semantic Chunking** | 500 lines | **~300 tokens** | ✅ **94% cheaper** |
+| Approach | Tokens Sent | Cost |
+|:---|:---:|:---:|
+| Raw diff (500-line file) | ~5,000 tokens | 💸 Expensive |
+| **AST Semantic Chunking** | **~300 tokens** | ✅ **94% cheaper** |
 
-> Tree-sitter builds a full syntax tree and extracts **only** the `function_definition` / `class_definition` nodes that overlap with changed lines. The LLM receives complete, syntactically valid code units — not truncated diff hunks — which also **improves review quality**.
+> Tree-sitter extracts **only** the `function_definition` / `class_definition` nodes that overlap with changed lines — complete, syntactically valid units, not truncated diff hunks.
 
-<br/>
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&section=header" />
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00d9ff,100:7b2fbe&height=3&section=header" width="100%"/>
 
 ## 🛠️ Tech Stack
 
 <div align="center">
 
-<!-- Skill icons — skillicons.dev is always live -->
 <img src="https://skillicons.dev/icons?i=python,fastapi,docker,git,github,vscode,linux&theme=dark&perline=7" />
 
 <br/><br/>
@@ -176,7 +139,7 @@
 | 🌐 Web Framework | [FastAPI](https://fastapi.tiangolo.com) + Uvicorn |
 | 🤖 AI Orchestration | [LangGraph 1.x](https://langchain-ai.github.io/langgraph/) |
 | 🧠 LLM | [OpenAI GPT-4o-mini](https://openai.com) via LangChain |
-| 🌳 AST Parsing | [Tree-sitter](https://tree-sitter.github.io) + tree-sitter-python |
+| 🌳 AST Parsing | [Tree-sitter 0.25](https://tree-sitter.github.io) + tree-sitter-python |
 | 🐙 GitHub Integration | [PyGithub](https://pygithub.readthedocs.io) |
 | 🔗 HTTP Client | [httpx](https://www.python-httpx.org) |
 | ⚙️ Config | [python-dotenv](https://pypi.org/project/python-dotenv/) |
@@ -185,9 +148,7 @@
 
 </div>
 
-<br/>
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&section=header" />
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:7b2fbe,100:00d9ff&height=3&section=header" width="100%"/>
 
 ## 📁 Project Structure
 
@@ -216,9 +177,7 @@ AI-powered-Code-Review-Bug-Detection-Agent/
 └── 🚫 .gitignore
 ```
 
-<br/>
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&section=header" />
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00d9ff,100:7b2fbe&height=3&section=header" width="100%"/>
 
 ## ⚙️ Installation
 
@@ -231,9 +190,7 @@ AI-powered-Code-Review-Bug-Detection-Agent/
 | 🌐 ngrok *(dev only)* | Any | [ngrok.com/download](https://ngrok.com/download) |
 | 🐳 Docker *(optional)* | Any | [docker.com](https://docker.com/get-started) |
 
-<br/>
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&section=header" />
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:7b2fbe,100:00d9ff&height=3&section=header" width="100%"/>
 
 ## 🚀 Quick Start
 
@@ -272,25 +229,17 @@ copy .env.example .env
 cp .env.example .env
 ```
 
-Now open `.env` and fill in your credentials:
+Open `.env` and fill in your credentials:
 
 ```env
-# GitHub Personal Access Token (needs: repo + pull_requests scopes)
 GITHUB_TOKEN=ghp_your_github_token_here
-
-# Secret you set when registering the GitHub webhook
 GITHUB_WEBHOOK_SECRET=your_webhook_secret_here
-
-# OpenAI API key — get one at https://platform.openai.com/api-keys
 OPENAI_API_KEY=sk-your_openai_key_here
-
-# Optional: swap to gpt-4o for higher accuracy (default: gpt-4o-mini)
 LLM_MODEL=gpt-4o-mini
 ```
 
-> 🔑 **Get your keys:**
-> - GitHub Token → [github.com/settings/tokens](https://github.com/settings/tokens) → Classic token → `repo` scope
-> - OpenAI Key → [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+> 🔑 GitHub Token → [github.com/settings/tokens](https://github.com/settings/tokens) → Classic → `repo` scope
+> 🔑 OpenAI Key → [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
 
 ### Step 5 — Run the server
 
@@ -298,73 +247,46 @@ LLM_MODEL=gpt-4o-mini
 uvicorn src.main:app --reload --port 8000
 ```
 
-```
-INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process
-```
+Visit **http://localhost:8000/health** ✅
 
-Visit **http://localhost:8000/health** to confirm it's running ✅
-
-### Step 6 — Expose to GitHub via ngrok
+### Step 6 — Expose via ngrok
 
 ```bash
 ngrok http 8000
+# Copy the https URL → e.g. https://abc123.ngrok-free.app
 ```
 
-Copy the HTTPS URL shown, e.g. `https://abc123.ngrok-free.app`
-
-### Step 7 — Register the GitHub Webhook
-
-1. Go to your GitHub repo → **Settings** → **Webhooks** → **Add webhook**
-2. Fill in:
+### Step 7 — Register GitHub Webhook
 
 | Field | Value |
 |:---|:---|
 | Payload URL | `https://abc123.ngrok-free.app/webhook` |
 | Content type | `application/json` |
-| Secret | Same value as `GITHUB_WEBHOOK_SECRET` in your `.env` |
-| Events | ✅ **Pull requests** only |
+| Secret | value of `GITHUB_WEBHOOK_SECRET` |
+| Events | ✅ Pull requests only |
 
-3. Click **Add webhook** — GitHub sends a ping → you'll see a ✅ green tick
+### Step 8 — Open a PR and watch it work! 🎉
 
-### Step 8 — Test it!
-
-Open a Pull Request in your repo — the agent will automatically:
-1. 📥 Receive the webhook event
-2. 📂 Fetch the diff and changed files
-3. 🌳 Run AST chunking + multi-agent analysis
-4. 💬 Post inline comments on your PR 🎉
-
-<br/>
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&section=header" />
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00d9ff,100:7b2fbe&height=3&section=header" width="100%"/>
 
 ## 🐳 Docker
 
 ```bash
-# Clone & configure
 git clone https://github.com/AI-Code-Review-Team/AI-powered-Code-Review-Bug-Detection-Agent.git
 cd AI-powered-Code-Review-Bug-Detection-Agent
-cp .env.example .env   # fill in your keys
+cp .env.example .env
 
-# Build and run with docker-compose
+# docker-compose
 docker-compose -f docker/docker-compose.yml up --build
-```
 
-Or with plain Docker:
-
-```bash
+# plain Docker
 docker build -f docker/Dockerfile -t ai-code-review-agent .
 docker run -p 8000:8000 --env-file .env ai-code-review-agent
 ```
 
-<br/>
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&section=header" />
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:7b2fbe,100:00d9ff&height=3&section=header" width="100%"/>
 
 ## 🧪 Running Tests
-
-Tests use **mocked LLM and GitHub API calls** — no real credentials needed:
 
 ```bash
 pytest -v
@@ -383,33 +305,20 @@ tests/test_webhook.py::test_webhook_processes_opened_pr        PASSED
 ====================== 35 passed in 3.64s ======================
 ```
 
-| Test File | What's Covered |
+| Test File | Coverage |
 |:---|:---|
 | `tests/test_parser.py` | Diff parsing, AST extraction, regex fallback, token reduction |
 | `tests/test_agents.py` | LLM mocking, all agent nodes, synthesizer dedup/sort, full graph |
 | `tests/test_webhook.py` | Signature validation, event filtering, happy path, error handling |
 
-<br/>
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&section=header" />
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00d9ff,100:7b2fbe&height=3&section=header" width="100%"/>
 
 ## 📡 API Endpoints
 
 | Method | Endpoint | Description |
 |:---:|:---|:---|
 | `POST` | `/webhook` | GitHub PR webhook receiver |
-| `GET` | `/health` | Liveness probe — returns server + tree-sitter status |
-
-### Health Check Response
-
-```json
-{
-  "status": "ok",
-  "tree_sitter_available": true
-}
-```
-
-### Webhook Response (on PR event)
+| `GET` | `/health` | Liveness probe |
 
 ```json
 {
@@ -422,41 +331,29 @@ tests/test_webhook.py::test_webhook_processes_opened_pr        PASSED
       "file": "app/views.py",
       "line": 42,
       "severity": "High",
-      "issue": "SQL injection via f-string interpolation in query",
+      "issue": "SQL injection via f-string interpolation",
       "fix": "Use parameterised queries: db.execute('SELECT * FROM users WHERE name=?', (user,))"
     }
   ]
 }
 ```
 
-<br/>
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&section=header" />
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:7b2fbe,100:00d9ff&height=3&section=header" width="100%"/>
 
-## 🔍 How Findings Look on GitHub
+## 🔍 Sample PR Comments
 
 ```
-🔴 [High] SQL injection via f-string interpolation
-Suggested fix: Use parameterised queries:
-db.execute('SELECT * FROM users WHERE name=?', (user,))
-```
+🔴 [High]   SQL injection via f-string interpolation
+            Fix: db.execute('SELECT * FROM users WHERE name=?', (user,))
 
-```
 🟡 [Medium] N+1 query pattern — DB call inside a for-loop
-Suggested fix: Use bulk fetch before the loop:
-users = User.objects.filter(id__in=user_ids)
+            Fix: users = User.objects.filter(id__in=user_ids)
+
+🟢 [Low]    Missing docstring on public function process_payment
+            Fix: Add a docstring describing parameters and return value.
 ```
 
-```
-🟢 [Low] Missing docstring on public function `process_payment`
-Suggested fix: Add a docstring describing parameters and return value.
-```
-
-Findings are always sorted: 🔴 **High** → 🟡 **Medium** → 🟢 **Low**
-
-<br/>
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&section=header" />
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00d9ff,100:7b2fbe&height=3&section=header" width="100%"/>
 
 ## 🛡️ Rate Limiting & Safety
 
@@ -464,12 +361,10 @@ Findings are always sorted: 🔴 **High** → 🟡 **Medium** → 🟢 **Low**
 |:---|:---|
 | LLM rate limiting | `asyncio.Semaphore(5)` — max 5 concurrent OpenAI calls |
 | GitHub API safety | All findings batched into **one** `create_review()` call |
-| Blocking I/O | All GitHub calls run in thread pool via `run_in_executor` |
+| Blocking I/O | GitHub calls run in thread pool via `run_in_executor` |
 | Webhook security | HMAC-SHA256 signature verified on every request |
 
-<br/>
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&section=header" />
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:7b2fbe,100:00d9ff&height=3&section=header" width="100%"/>
 
 ## 🔧 Troubleshooting
 
@@ -484,13 +379,13 @@ pip install tree-sitter==0.25.2 tree-sitter-python==0.23.6
 <details>
 <summary><b>❌ OpenAI AuthenticationError</b></summary>
 
-Make sure your `.env` file has a valid `OPENAI_API_KEY` and is in the project root.
+Check that `OPENAI_API_KEY` is set correctly in your `.env` file in the project root.
 </details>
 
 <details>
 <summary><b>❌ Webhook shows "Invalid signature"</b></summary>
 
-Ensure `GITHUB_WEBHOOK_SECRET` in `.env` exactly matches the secret in GitHub's webhook settings.
+`GITHUB_WEBHOOK_SECRET` in `.env` must exactly match the secret entered in GitHub webhook settings.
 </details>
 
 <details>
@@ -502,27 +397,20 @@ ngrok http 8000                    # terminal 2
 ```
 </details>
 
-<br/>
-
-<!-- Animated footer wave -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=140&section=footer&animation=twinkling" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7b2fbe,50:00d9ff,100:0d1117&height=160&section=footer&animation=fadeIn" width="100%"/>
 
 <div align="center">
 
-<br/>
-
-<!-- Animated footer typing -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=3000&pause=1000&color=555555&center=true&vCenter=true&width=440&lines=Made+with+%E2%9D%A4%EF%B8%8F+by+r4hul-s3thi;If+this+helped+you%2C+drop+a+%E2%AD%90+star!" alt="footer typing" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&duration=3000&pause=1500&color=00D9FF&center=true&vCenter=true&width=500&height=35&lines=⭐+Star+this+repo+if+it+helped+you!;🤖+Built+with+LangGraph+%2B+Tree-sitter+%2B+FastAPI;🔐+Keeping+your+PRs+secure+%26+clean" alt="footer" />
 
 <br/><br/>
 
 **Made with ❤️ by [r4hul-s3thi](https://github.com/r4hul-s3thi)**
 
-<a href="https://github.com/AI-Code-Review-Team/AI-powered-Code-Review-Bug-Detection-Agent/stargazers">
-<img src="https://img.shields.io/github/stars/AI-Code-Review-Team/AI-powered-Code-Review-Bug-Detection-Agent?style=for-the-badge&logo=github&color=gold&labelColor=0D1117" />
-</a>
-<a href="https://github.com/AI-Code-Review-Team/AI-powered-Code-Review-Bug-Detection-Agent/network/members">
-<img src="https://img.shields.io/github/forks/AI-Code-Review-Team/AI-powered-Code-Review-Bug-Detection-Agent?style=for-the-badge&logo=github&color=blue&labelColor=0D1117" />
-</a>
+<br/>
+
+[![Stars](https://img.shields.io/github/stars/AI-Code-Review-Team/AI-powered-Code-Review-Bug-Detection-Agent?style=for-the-badge&logo=github&color=FFD700&labelColor=0d1117)](https://github.com/AI-Code-Review-Team/AI-powered-Code-Review-Bug-Detection-Agent/stargazers)
+[![Forks](https://img.shields.io/github/forks/AI-Code-Review-Team/AI-powered-Code-Review-Bug-Detection-Agent?style=for-the-badge&logo=github&color=00D9FF&labelColor=0d1117)](https://github.com/AI-Code-Review-Team/AI-powered-Code-Review-Bug-Detection-Agent/network/members)
+[![Issues](https://img.shields.io/github/issues/AI-Code-Review-Team/AI-powered-Code-Review-Bug-Detection-Agent?style=for-the-badge&logo=github&color=FF6B6B&labelColor=0d1117)](https://github.com/AI-Code-Review-Team/AI-powered-Code-Review-Bug-Detection-Agent/issues)
 
 </div>
