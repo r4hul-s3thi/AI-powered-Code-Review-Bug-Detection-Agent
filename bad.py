@@ -15,6 +15,10 @@ def get_users():
         
         user = db.execute(f"SELECT * FROM users WHERE id={id}")
         users.append(user)
+
+
+
+    
     return users
 
 def run_command(cmd):
