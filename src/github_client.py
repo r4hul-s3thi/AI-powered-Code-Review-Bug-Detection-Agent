@@ -14,7 +14,7 @@ from hashlib import sha256
 import httpx
 from github import Github, GithubException
 
-from config import GITHUB_TOKEN, GITHUB_WEBHOOK_SECRET
+from src.config import GITHUB_TOKEN, GITHUB_WEBHOOK_SECRET
 
 log = logging.getLogger(__name__)
 

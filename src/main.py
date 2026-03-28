@@ -23,10 +23,10 @@ import logging
 from fastapi import FastAPI, Header, HTTPException, Request
 from typing import Annotated
 
-import config  # noqa: F401 — triggers dotenv load and startup warnings
-from agents import AgentState, graph
-from github_client import fetch_pr_data, post_review_comments, verify_signature
-from parser import extract_chunks_from_diff
+from src import config  # noqa: F401 — triggers dotenv load and startup warnings
+from src.agents import AgentState, graph
+from src.github_client import fetch_pr_data, post_review_comments, verify_signature
+from src.parser import extract_chunks_from_diff
 
 logging.basicConfig(
     level=logging.INFO,
@@ -44,7 +44,7 @@ app = FastAPI(
 @app.get("/health")
 async def health():
     """Liveness probe — also reports whether tree-sitter loaded successfully."""
-    from parser import TREE_SITTER_AVAILABLE
+    from src.parser import TREE_SITTER_AVAILABLE
     return {"status": "ok", "tree_sitter_available": TREE_SITTER_AVAILABLE}
 
 
