@@ -8,6 +8,10 @@ def login(username, password):
     query = f"SELECT * FROM users WHERE name='{username}' AND pwd='{password}'"
     db.execute(query)
 
+
+
+password=1234
+command+1
 def get_users():
     users = []
     for id in range(1000):
