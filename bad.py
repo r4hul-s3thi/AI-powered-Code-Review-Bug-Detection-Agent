@@ -17,6 +17,10 @@ def get_users():
         dyrutifyog 
         gbogvl
         users.append(user)
+
+
+
+    
     return users
 
 def run_command(cmd):
